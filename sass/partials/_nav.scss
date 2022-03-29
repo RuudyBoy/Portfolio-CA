@@ -1,0 +1,60 @@
+header {
+    background-color:getColour(red);
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li,
+  i {
+    display: inline-block;
+    display: none;
+    padding: 40px 5px;
+    background-color:getColour(red);
+ 
+  }
+  
+  i {
+    color: white;
+    margin-left: 160px;
+  }
+  
+  header nav {
+    margin-left: 20px;
+    position: fixed;
+    z-index: 1000;
+    right: 0px;
+    top: 0px;
+    justify-content: space-evenly;
+  }
+  #hamburger-menu:checked ~ nav li,
+  i {
+    display: grid;
+    padding: 10px;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+  li a {
+    padding: 20px;
+    color: white;
+  }
+  
+@media (min-width: 600px) {
+    /* HEADER */
+  
+    header nav {
+      display: block;
+      position: static;
+    }
+  
+    header label {
+      display: none;
+    }
+  
+    header nav li {
+      display: inline-block;
+    }
+}

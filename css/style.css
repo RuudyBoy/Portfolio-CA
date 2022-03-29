@@ -1,0 +1,130 @@
+body {
+  height: 100%;
+  margin: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  background-image: url(../../img/bakgrunn.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.home-info {
+  text-align: center;
+}
+
+.portrait {
+  margin-bottom: 0px;
+  max-width: 704px;
+  max-height: 800px;
+}
+
+.cta {
+  color: #FFFFFF;
+  background-color: #DC4C4C;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .home {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+header {
+  background-color: #DC4C4C;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav li,
+i {
+  display: inline-block;
+  display: none;
+  padding: 40px 5px;
+  background-color: #DC4C4C;
+}
+
+i {
+  color: white;
+  margin-left: 160px;
+}
+
+header nav {
+  margin-left: 20px;
+  position: fixed;
+  z-index: 1000;
+  right: 0px;
+  top: 0px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#hamburger-menu:checked ~ nav li,
+i {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+li a {
+  padding: 20px;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  /* HEADER */
+  header nav {
+    display: block;
+    position: static;
+  }
+  header label {
+    display: none;
+  }
+  header nav li {
+    display: inline-block;
+  }
+}
+
+h1 {
+  color: #DC4C4C;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  font-size: 1em;
+  margin: 5px 0px;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */

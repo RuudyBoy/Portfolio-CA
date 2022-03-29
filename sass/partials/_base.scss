@@ -1,0 +1,46 @@
+body {
+    height: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(../../img/bakgrunn.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .home {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+  }
+
+  .home-info {
+      text-align: center; 
+  } 
+  
+
+  .portrait {
+      margin-bottom: 0px;
+      max-width: 704px;
+      max-height:800px ;
+  }
+
+  .cta {
+      color: getColour(white);
+      background-color: getColour(red);
+      padding: 20px 40px;
+      border-radius: 10px;
+
+  }
+
+
+
+  @media (max-width: 800px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+   
+}

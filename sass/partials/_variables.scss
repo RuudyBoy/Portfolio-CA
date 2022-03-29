@@ -1,0 +1,20 @@
+
+$font-a:"Kanit", sans-serif;
+$font-text: "DM Sans", sans-serif;
+$font-heading:"Be Vietnam Pro", sans-serif; 
+
+$colours: (
+    black: #000000,
+    white: #FFFFFF,
+    red: #DC4C4C,
+    
+);
+
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}
+
+
+
+
