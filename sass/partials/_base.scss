@@ -9,6 +9,10 @@ body {
     background-repeat: no-repeat;
   }
 
+  .container {
+      text-align: center;
+  }
+
   .home {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -18,6 +22,11 @@ body {
   .home-info {
       text-align: center; 
   } 
+
+  .work li {
+      padding: 5px;
+
+  }
   
 
   .portrait {
@@ -30,6 +39,7 @@ body {
       color: getColour(white);
       background-color: getColour(red);
       padding: 20px 40px;
+      margin-top: 20px;
       border-radius: 10px;
 
   }

@@ -11,6 +11,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  text-align: center;
+}
+
 .home {
   display: -ms-grid;
   display: grid;
@@ -24,6 +28,10 @@ body {
   text-align: center;
 }
 
+.work li {
+  padding: 5px;
+}
+
 .portrait {
   margin-bottom: 0px;
   max-width: 704px;
@@ -34,6 +42,7 @@ body {
   color: #FFFFFF;
   background-color: #DC4C4C;
   padding: 20px 40px;
+  margin-top: 20px;
   border-radius: 10px;
 }
 
@@ -122,9 +131,15 @@ a {
 }
 
 p {
-  text-align: center;
   font-size: 1em;
-  margin: 5px 0px;
-  padding: 20px;
+}
+
+.project-link {
+  color: #000000;
+}
+
+.project-linkhover {
+  text-decoration: overline;
+  color: aqua;
 }
 /*# sourceMappingURL=style.css.map */
