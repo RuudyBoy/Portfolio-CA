@@ -1,20 +1,35 @@
 h1 {
     color: getColour(red);
+    font-family:$font-heading;
 }
 
 a {
+    font-size: 1em;
     text-decoration: none;
+    font-family: $font-a;
 }
 
 p {
     font-size: 1em;
+    font-family: $font-text;
+    margin: 5px auto;
+    max-width: 1000px;
 }
 
 .project-link {
     color: getColour(black);
     
-    &hover {
-        text-decoration: overline;
-        color: aqua;
+    &:hover {
+        transition: 0.5s;
+        font-size: 1.1em;
+        text-decoration: underline;
+        color: getColour(red);
+    }
+}
+
+
+@media (max-width: 800px) {
+    p {
+        max-width: 500px;
     }
 }

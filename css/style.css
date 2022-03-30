@@ -46,6 +46,10 @@ body {
   border-radius: 10px;
 }
 
+.homepage-text {
+  padding: 30px;
+}
+
 @media (max-width: 800px) {
   .home {
     display: -ms-grid;
@@ -124,22 +128,37 @@ li a {
 
 h1 {
   color: #DC4C4C;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 a {
+  font-size: 1em;
   text-decoration: none;
+  font-family: "Kanit", sans-serif;
 }
 
 p {
   font-size: 1em;
+  font-family: "DM Sans", sans-serif;
+  margin: 5px auto;
+  max-width: 1000px;
 }
 
 .project-link {
   color: #000000;
 }
 
-.project-linkhover {
-  text-decoration: overline;
-  color: aqua;
+.project-link:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.1em;
+  text-decoration: underline;
+  color: #DC4C4C;
+}
+
+@media (max-width: 800px) {
+  p {
+    max-width: 500px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
