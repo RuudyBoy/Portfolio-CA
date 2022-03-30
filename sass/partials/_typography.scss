@@ -1,4 +1,4 @@
-h1 {
+h1 , h2 {
     color: getColour(red);
     font-family:$font-heading;
 }
@@ -13,7 +13,7 @@ p {
     font-size: 1em;
     font-family: $font-text;
     margin: 5px auto;
-    max-width: 1000px;
+    max-width: 500px;
 }
 
 .project-link {
