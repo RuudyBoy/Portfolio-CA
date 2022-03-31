@@ -2,6 +2,8 @@
 footer {
     background-image: url(../../img/NAVbakgrunn.jpg);
     margin-top: auto;
+    text-align: center;
+    width: 100%;
   }
 
   .footer-container {
@@ -15,6 +17,8 @@ footer {
       padding: 10px;
   }
 
+ 
+
 
 @media (max-width: 800px) {
 
@@ -22,7 +26,10 @@ footer {
         text-align: center;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        padding: 30px;
-      }
+        grid-template-rows: 1fr 1fr ;
+      } 
+      
+    .footer-nav {
+    display: contents;
+  }
 }
