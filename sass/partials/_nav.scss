@@ -1,5 +1,6 @@
 header {
-    background-color:getColour(red);
+    //background-color:getColour(red);
+    background-image: url(../../img/NAVbakgrunn.jpg);
     text-align: center;
     display: flex;
     align-items: center;
@@ -9,15 +10,15 @@ header {
   i {
     display: inline-block;
     display: none;
-    padding: 40px 5px;
-    background-color:getColour(red);
- 
+    padding: 40px 5px; 
+    background-image: url(../../img/NAVbakgrunn.jpg);
   }
   
   i {
     color: white;
     margin-left: 160px;
   }
+
   
   header nav {
     margin-left: 20px;
@@ -41,19 +42,13 @@ header {
     padding: 20px;
     color: white;
   }
+
+  .active {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
   
 
-  footer {
-    background-color: getColour(red);
-    margin-top: auto;
-  }
-
-  .footer-container {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px;
-  }
 @media (min-width: 600px) {
     /* HEADER */
   
@@ -68,6 +63,14 @@ header {
   
     header nav li {
       display: inline-block;
+    }
+
+    nav li,
+    i {
+      display: inline-block;
+      display: none;
+      padding: 40px 5px; 
+      background-image: none;
     }
 
 }

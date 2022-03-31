@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +27,7 @@
                 <li>
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a class="active" href="portfolio.html">Portfolio</a>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
@@ -27,17 +37,49 @@
         <div class="home-info">
             <h1>My work and projects</h1>
             <h2>Check out some of my projects throughout my studies.</h2>
-            <ul class="work">
-                <li><a class="project-link" href="https://objective-chandrasekhar-2738fb.netlify.app/">Gamehub(School project)</a></li>
-                <li><a class="project-link" href="https://competent-mahavira-6742b5.netlify.app/">Dessert API call</a></li>
-                <li><a class="project-link" href="https://nostalgic-banach-9cdc96.netlify.app/">Volleyball blog</a></li>
-                <li><a class="project-link" href="https://github.com/Noroff-FEU-Assignments/css-frameworks-ca-RuudyBoy">CSS Frameworks</a></li>
-            </ul>
+            <div class="work">
+                <div class="card">
+                    <img src="img/NAVbakgrunn.jpg" alt="card">
+                    <div>
+                        <a class="project-link" href="https://objective-chandrasekhar-2738fb.netlify.app/">Gamehub</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/NAVbakgrunn.jpg" alt="card">
+                    <div>
+                        <a class="project-link" href="https://competent-mahavira-6742b5.netlify.app/">Dessert API call</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/NAVbakgrunn.jpg" alt="card">
+                    <div>
+                        <a class="project-link" href="https://nostalgic-banach-9cdc96.netlify.app/">Volleyball blog</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/NAVbakgrunn.jpg" alt="card">
+                    <div>
+                        <a class="project-link" href="https://github.com/Noroff-FEU-Assignments/css-frameworks-ca-RuudyBoy">CSS Frameworks</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
             <img class="portrait" src="img/portfolio.png" alt="">
         </div>
     </div>
-    
+    <footer>
+        <div class="footer-container">
+        <div>
+           <p>&copy; Christian Jørgensen Ruud</p>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>

@@ -12,6 +12,11 @@ a {
     font-size: 1em;
     text-decoration: none;
     font-family: $font-a;
+
+    &:hover {
+        font-size: 1.1em;
+        text-decoration: underline;
+    }
 }
 
 footer p {
@@ -30,16 +35,35 @@ p {
     padding-bottom: 30px;
 }
 
+//portfolio side
 
-.project-link {
-    color: getColour(black);
-    
+
+
+.card {
+    margin: 20px;
+    background-color: getColour(red);
+    border-radius: 10px;
+    padding-bottom: 20px;
+
     &:hover {
-        transition: 0.5s;
-        font-size: 1.1em;
-        text-decoration: underline;
         color: getColour(red);
+        text-decoration: none;
+        background-color: getColour(white);
+        border: 2px solid getColour(red);
+        transition: 0.5s;
     }
+}
+
+.card img {
+    border-radius: 10px 10px 0px 0px;
+    max-width: 200px;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
 }
 
 
@@ -48,11 +72,4 @@ p {
         max-width: 500px;
     }
 
-    .footer-container {
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        padding: 30px;
-      }
 }

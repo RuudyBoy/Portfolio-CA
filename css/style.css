@@ -51,6 +51,15 @@ body {
   border-radius: 10px;
 }
 
+.cta:hover {
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #DC4C4C;
+  border: 2px solid #DC4C4C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (max-width: 800px) {
   .home {
     display: -ms-grid;
@@ -63,7 +72,7 @@ body {
 }
 
 header {
-  background-color: #DC4C4C;
+  background-image: url(../../img/NAVbakgrunn.jpg);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +87,7 @@ i {
   display: inline-block;
   display: none;
   padding: 40px 5px;
-  background-color: #DC4C4C;
+  background-image: url(../../img/NAVbakgrunn.jpg);
 }
 
 i {
@@ -113,18 +122,9 @@ li a {
   color: white;
 }
 
-footer {
-  background-color: #DC4C4C;
-  margin-top: auto;
-}
-
-.footer-container {
-  display: -ms-grid;
-  display: grid;
-  text-align: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  padding: 30px;
+.active {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
@@ -138,6 +138,13 @@ footer {
   }
   header nav li {
     display: inline-block;
+  }
+  nav li,
+  i {
+    display: inline-block;
+    display: none;
+    padding: 40px 5px;
+    background-image: none;
   }
 }
 
@@ -157,6 +164,11 @@ a {
   font-family: "Kanit", sans-serif;
 }
 
+a:hover {
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
 footer p {
   font-family: "Kanit", sans-serif;
   color: #FFFFFF;
@@ -173,22 +185,61 @@ p {
   padding-bottom: 30px;
 }
 
-.project-link {
-  color: #000000;
+.card {
+  margin: 20px;
+  background-color: #DC4C4C;
+  border-radius: 10px;
+  padding-bottom: 20px;
 }
 
-.project-link:hover {
+.card:hover {
+  color: #DC4C4C;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  border: 2px solid #DC4C4C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 1.1em;
-  text-decoration: underline;
-  color: #DC4C4C;
+}
+
+.card img {
+  border-radius: 10px 10px 0px 0px;
+  max-width: 200px;
+}
+
+.work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 @media (max-width: 800px) {
   p {
     max-width: 500px;
   }
+}
+
+footer {
+  background-image: url(../../img/NAVbakgrunn.jpg);
+  margin-top: auto;
+}
+
+.footer-container {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+
+footer a {
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
   .footer-container {
     text-align: center;
     display: -ms-grid;

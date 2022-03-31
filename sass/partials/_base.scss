@@ -45,7 +45,17 @@ body {
       margin-top: 20px;
       border-radius: 10px;
 
+      &:hover {
+          text-decoration: none;
+          background-color: getColour(white);
+          color: getColour(red);
+          border: 2px solid getColour(red);
+          transition: 0.5s;
+      }
+
   }
+
+  
 
  
 

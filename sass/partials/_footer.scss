@@ -1,0 +1,28 @@
+
+footer {
+    background-image: url(../../img/NAVbakgrunn.jpg);
+    margin-top: auto;
+  }
+
+  .footer-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+  }
+
+  footer a {
+      padding: 10px;
+  }
+
+
+@media (max-width: 800px) {
+
+    .footer-container {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 30px;
+      }
+}
