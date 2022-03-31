@@ -23,15 +23,6 @@ body {
       text-align: center; 
   } 
 
-  .work li {
-      padding: 5px;
-  }
-
-  .work {
-      display:inline-grid;
-  }
-  
-
   .portrait {
       margin-bottom: 0px;
       max-width: 704px;
@@ -56,7 +47,30 @@ body {
   }
 
   
+.card {
+    margin: 20px;
+    background-color: getColour(red);
+    border-radius: 10px;
+    padding-bottom: 20px;
 
+    &:hover {
+        color: getColour(red);
+        text-decoration: none;
+        background-color: getColour(white);
+        border: 2px solid getColour(red);
+        transition: 0.5s;
+    }
+}
+
+.card img {
+    border-radius: 10px 10px 0px 0px;
+    max-width: 200px;
+}
+
+.work {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+}
  
 
 
@@ -73,5 +87,11 @@ body {
     .portrait {
         display: none;
     }
+
+    .work {
+        grid-template-columns: 1fr;
+    }
+
+    
    
 }

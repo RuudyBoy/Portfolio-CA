@@ -35,36 +35,11 @@ p {
     padding-bottom: 30px;
 }
 
-//portfolio side
 
 
 
-.card {
-    margin: 20px;
-    background-color: getColour(red);
-    border-radius: 10px;
-    padding-bottom: 20px;
 
-    &:hover {
-        color: getColour(red);
-        text-decoration: none;
-        background-color: getColour(white);
-        border: 2px solid getColour(red);
-        transition: 0.5s;
-    }
-}
 
-.card img {
-    border-radius: 10px 10px 0px 0px;
-    max-width: 200px;
-}
-
-.work {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-    
-}
 
 
 @media (max-width: 800px) {
