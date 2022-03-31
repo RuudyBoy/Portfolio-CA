@@ -45,7 +45,14 @@ header {
 
   footer {
     background-color: getColour(red);
-    margin-bottom: 0px;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
   }
 @media (min-width: 600px) {
     /* HEADER */
@@ -62,4 +69,5 @@ header {
     header nav li {
       display: inline-block;
     }
+
 }
