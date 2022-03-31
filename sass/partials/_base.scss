@@ -62,6 +62,14 @@ body {
     }
 }
 
+.card a {
+    color: getcolour(white);
+
+    &:hover {
+        color: getColour(red);
+    }
+}
+
 .card img {
     border-radius: 10px 10px 0px 0px;
     max-width: 200px;

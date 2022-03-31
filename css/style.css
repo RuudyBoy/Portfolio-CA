@@ -67,6 +67,14 @@ body {
   transition: 0.5s;
 }
 
+.card a {
+  color: getcolour(white);
+}
+
+.card a:hover {
+  color: #DC4C4C;
+}
+
 .card img {
   border-radius: 10px 10px 0px 0px;
   max-width: 200px;
