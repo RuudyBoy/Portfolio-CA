@@ -19,6 +19,9 @@ header {
     margin-left: 160px;
   }
 
+  header::before {
+    transition: 2s;
+  }
   
   header nav {
     margin-left: 20px;
