@@ -62,7 +62,12 @@ body {
 
   @media (max-width: 800px) {
     .home {
+        display: flow-root;
         text-align: center;
+    }
+
+    .cta {
+        margin-bottom: 20px;
     }
 
     .portrait {
