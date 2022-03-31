@@ -60,16 +60,17 @@ p {
 }
 
 .work {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
     
 }
 
 
 @media (max-width: 800px) {
     p {
-        max-width: 500px;
+        max-width: 70%;
+        margin-bottom: 20px;
     }
 
 }
